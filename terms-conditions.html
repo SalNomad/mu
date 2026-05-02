@@ -1,1 +1,392 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Terms and Conditions for Mutafuq Educational Service Ltd." />
+  <title>Terms &amp; Conditions | Mutafuq</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue: #2e85c6;
+      --button: #3d9be9;
+      --text: #111;
+      --muted: #636363;
+      --card: #f7f7fa;
+      --red: #df1224;
+      --container: min(1050px, calc(100% - 48px));
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff url("https://static.wixstatic.com/media/2b9fec1d9ff14b828c221cf1c81ead9d.png") center / cover fixed;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      width: min(1500px, calc(100% - 48px));
+      margin: 0 auto;
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: 330px;
+      max-width: 42vw;
+      height: auto;
+      display: block;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: var(--button);
+      color: #fff;
+      border-radius: 999px;
+      padding: 12px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(22px, 4vw, 72px);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--button); }
+
+    .legal-page {
+      width: var(--container);
+      margin: 0 auto;
+      padding: clamp(44px, 6vw, 88px) 0 90px;
+    }
+
+    .legal-page h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(64px, 9vw, 112px);
+      line-height: .9;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .updated {
+      margin: 12px 0 24px;
+      color: var(--muted);
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.1;
+      font-weight: 300;
+      letter-spacing: .04em;
+    }
+
+    .legal-page h2 {
+      margin: 22px 0 8px;
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .legal-page h3 {
+      margin: 18px 0 6px;
+      font-size: clamp(22px, 2.4vw, 28px);
+      line-height: 1.25;
+      font-weight: 600;
+    }
+
+    .legal-page p,
+    .legal-page li {
+      font-size: clamp(16px, 1.8vw, 24px);
+      line-height: 1.45;
+      font-weight: 400;
+    }
+
+    .legal-page p { margin: 0 0 10px; }
+
+    .legal-page ul {
+      margin: 10px 0 24px;
+      padding-left: 30px;
+    }
+
+    .legal-page li { margin-bottom: 12px; }
+
+    .footer {
+      padding: 48px 0 60px;
+      background: var(--card);
+    }
+
+    .footer-grid {
+      width: min(1215px, calc(100% - 48px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .footer p {
+      margin: 0 0 24px;
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    .map iframe {
+      width: 100%;
+      min-height: 320px;
+      border: 0;
+      display: block;
+    }
+
+    .copyright {
+      width: min(1215px, calc(100% - 48px));
+      margin: 55px auto 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .legal-links {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .chat-button {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 30;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 18px 30px;
+      font-weight: 700;
+      box-shadow: 0 12px 35px rgba(0,0,0,.18);
+    }
+
+    .chat-button span:first-child {
+      display: inline-grid;
+      place-items: center;
+      width: 26px;
+      height: 26px;
+      background: #fff;
+      color: var(--red);
+      border-radius: 50%;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    @media (max-width: 980px) {
+      .nav { min-height: 88px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        inset: 88px 24px auto 24px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 18px 55px rgba(20,20,30,.12);
+        padding: 14px;
+        font-size: 20px;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 14px 18px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 620px) {
+      :root { --container: min(100% - 28px, 1050px); }
+      .nav { width: calc(100% - 28px); }
+      .logo img { max-width: 68vw; }
+      .legal-page { padding-top: 32px; }
+      .legal-page h1 { font-size: 54px; }
+      .updated { font-size: 28px; }
+      .legal-links { flex-direction: column; gap: 8px; }
+      .chat-button { padding: 14px 18px; right: 14px; bottom: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Mutafuq home">
+        <img src="https://static.wixstatic.com/media/ef1e39_5e42f2d8753e491b9ff7232d00bee719~mv2.png/v1/crop/x_0,y_97,w_1080,h_343/fill/w_411,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/output-onlinejpgtools.png" alt="Mutafuq Educational Service Ltd logo" />
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#benefits">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="privacy-and-policy.html">Privacy &amp; Policy</a></li>
+        <li><a class="active" href="terms-conditions.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="legal-page">
+    <h1>Terms of Service</h1>
+    <p class="updated">Last Updated: September 20, 2022</p>
+
+    <h2>Introduction</h2>
+    <p>The Terms and Conditions (“Terms”) describe how MUTAFUQ EDUCATIONAL SERVICE LTD in Scotland (“Company,” “we,” and “our”) regulates your use of this website https://www.mutafuq.com (the “Website”). Please read the following information carefully to understand our practices regarding your use of the website. The Company may change the Terms at any time. The Company may inform you of the changes to the Terms using the available means of communication. The Company recommends you to check the website frequently to see the actual version of the Terms and their previous versions.</p>
+    <p>If you represent a legal entity, you certify that you are entitled by such a legal entity to conclude the Terms as the legal entity you represent.</p>
+
+    <h2>Privacy Policy</h2>
+    <p>Our Privacy Policy is available on a separate page. Our Privacy Policy explains to you how we process information about you. You shall understand that through your use of the website you acknowledge the processing of this information shall be undertaken in accordance with the Privacy Policy.</p>
+
+    <h2>Your Account</h2>
+    <p>When using the website, you shall be responsible for ensuring the confidentiality of your account, password and other credentials and for secure access to your device. You shall not assign your account to anyone. The Company is not responsible for unauthorized access to your account that results from misappropriation or theft of your account. The Company may refuse or cancel service, terminate your account, and remove or edit content.</p>
+    <p>The Company does not knowingly collect personal data from persons under the age of 16 (sixteen). If you are under 16 (sixteen) years old, you may not use the website and may not enter into the Terms under any circumstances.</p>
+
+    <h2>Services</h2>
+    <p>The website allows you to use Services available on the website. You shall not use the services for the illegal aims.</p>
+    <p>We may, at our sole discretion, set fees for using the website for you. All prices are published separately on relevant pages on the website. We may, at our sole discretion, at any time change any fees.</p>
+    <p>We may use certified payment systems, which also may have their commissions. Such commissions may be implied on you when you choose a particular payment system. Detailed information about commissions of such payment systems may be found on their websites.</p>
+
+    <h2>Third Party Services</h2>
+    <p>The website may include links to other websites, applications, and platforms (hereinafter the "Linked Sites").</p>
+    <p>The Company does not control the Linked Sites, and shall not be responsible for the content and other materials of the Linked Sites. The Company makes these links available to you for providing the functionality or services on the website.</p>
+
+    <h2>Prohibited Uses and Intellectual Property</h2>
+    <p>The Company grants you a non-transferable, non-exclusive, revocable license to access and use the website from one device in accordance with the Terms. You shall not use the website for unlawful or prohibited purpose. You may not use the website in a way that may disable, damage, or interfere in the website.</p>
+    <p>All content present on the website includes text, code, graphics, logos, images, compilation, software used on the website (hereinafter and hereinbefore the "Content"). The Content is the property of the Company or its contractors and protected by intellectual property laws that protect such rights. You agree to use all copyright and other proprietary notices or restrictions contained in the Content and you are prohibited from changing the Content.</p>
+    <p>You may not publish, transmit, modify, reverse engineer, participate in the transfer, or create and sell derivative works, or in any way use any of the Content. Your enjoyment of the website shall not entitle you to make any illegal and disallowed use of the Content, and in particular you shall not change proprietary rights or notices in the Content. You shall use the Content only for your personal and non-commercial use. The Company does not grant you any licenses to the intellectual property of the Company.</p>
+
+    <h2>The Company Materials</h2>
+    <p>By posting, uploading, inputting, providing or submitting your Content you are granting the Company to use your Content in connection with the operation of Company's business including, but not limited to, the rights to transmit, publicly display, distribute, publicly perform, copy, reproduce, and translate your Content; and to publish your name in connection with your Content.</p>
+    <p>No compensation shall be paid with regard to the use of your Content. The Company shall have no obligation to publish or enjoy any Content you may send us and may remove your Content at any time.</p>
+    <p>By posting, uploading, inputting, providing or submitting your Content you warrant and represent that you own all of the rights to your Content.</p>
+
+    <h2>Disclaimer of Certain Liabilities</h2>
+    <p>The information available via the website may include typographical errors or inaccuracies. The Company shall not be liable for these inaccuracies and errors.</p>
+    <p>The Company makes no representations about the availability, accuracy, reliability, suitability, and timeliness of the Content contained on and services available on the website. To the maximum extent allowed by the applicable law, all such Content and services are provided on the "as is" basis. The Company disclaims all warranties and conditions regarding this Content and services, including warranties and provisions of merchantability, fitness for a certain purpose.</p>
+    <p>To the maximum extent permitted by the applicable law, in no event shall the Company be liable for any direct, indirect, incidental, consequential, special, punitive damages including, but not limited to, damages for loss of enjoyment, data or profits, in the connection with the enjoyment or execution of the website in the context of the inability or delay to enjoy the website or its services, or for any Content of the website, or otherwise arising out of the enjoyment of the website, based on contract and non-contract liability or other reason.</p>
+    <p>If the exclusion or limitation of liability for damages, whether consequential or incidental, are prohibited in a particular case, the exclusion or limitation of liability shall not apply to you.</p>
+
+    <h2>Indemnification</h2>
+    <p>You agree to indemnify, defend and hold harmless the Company, its managers, directors, employees, agents, and third parties, for any costs, losses, expenses (including attorneys' fees), liabilities regarding or arising out of your enjoyment of or inability to enjoy the website or its services and Company’s services and products, your violation of the Terms or your violation of any rights of third parties, or your violation of the applicable law. The Company may assume the exclusive defense and you shall cooperate with the Company in asserting any available defenses.</p>
+
+    <h2>Termination and Access Restriction</h2>
+    <p>The Company may terminate your access and account to the website and its related services or any part at any time, without notice, in case of your violation of the Terms.</p>
+
+    <h2>Miscellaneous</h2>
+    <p>The governing law of the Terms shall be the substantive laws of the country where the Company is set up, except the conflict of laws rules. You shall not use the website in jurisdictions that do not give effect to all provisions of the Terms.</p>
+    <p>No joint venture, partnership, employment, or agency relationship shall be implied between you and the Company as a result of the Terms or use of the website.</p>
+    <p>Nothing in the Terms shall be a derogation of the Company's right to comply with governmental, court, police, and law enforcement requests or requirements regarding your enjoyment of the website.</p>
+    <p>If any part of the Terms is determined to be void or unenforceable in accordance with applicable law then the void or unenforceable clauses will be deemed superseded by valid and enforceable clauses shall be similar to the original version of the Terms and other parts and sections of the Terms shall be applicable to you and the Company.</p>
+    <p>The Terms constitute the entire agreement between you and the Company regarding the enjoyment of the website and the Terms supersede all prior or communications and offers, whether electronic, oral or written, between you and the Company.</p>
+    <p>The Company and its affiliates shall not be liable for a failure or delay to fulfill its obligations where the failure or delay results from any cause beyond Company's reasonable control, including technical failures, natural disasters, blockages, embargoes, riots, acts, regulation, legislation, or orders of government, terroristic acts, war, or any other force outside of Company's control.</p>
+    <p>In case of controversies, demands, claims, disputes, or causes of action between the Company and you relating to the website or other related issues, or the Terms, you and the Company agree to attempt to resolve such controversies, demands, claims, disputes, or causes of action by good faith negotiation, and in case of failure of such negotiation, exclusively through the courts of the country where the Company is set up.</p>
+
+    <h2>Complaints</h2>
+    <p>We are committed to resolve any complaints about our collection or use of your personal data. If you would like to make a complaint regarding this Terms or our practices in relation to your personal data, please contact us through our website. We will reply to your complaint as soon as we can and in any event, within 30 days. We hope to resolve any complaint brought to our attention, however if you feel that your complaint has not been adequately resolved, you reserve the right to contact your local data protection supervisory authority.</p>
+
+    <h2>Contact Information</h2>
+    <p>We welcome your comments or questions about our Terms. You may contact us through the contact information available on our website.</p>
+
+    <h2>Terms of Use</h2>
+    <p class="updated">Effective as of September 20, 2022.</p>
+    <p>Welcome to MUTAFUQ EDUCATIONAL SERVICE LTD (the "Service"). The following Terms of Use apply when you view or use the Service located at: https://www.mutafuq.com. Please review the following terms carefully. By accessing or using the Service, you signify your agreement to these Terms of Use. If you do not agree to these Terms of Use, you may not access or use the Service.</p>
+
+    <h2>Privacy Policy</h2>
+    <p>The company respects the privacy of its Service users. Please refer to the Company's Privacy Policy which explains how we collect, use, and disclose information that pertains to your privacy. When you access or use the Service, you signify your agreement to this Privacy Policy.</p>
+
+    <h2>Registration; Rules for User Conduct and Use of the Service</h2>
+    <p>You need to be at least 16 years old to register for and use the Service.</p>
+    <p>If you are a user who signs up for the Service, the company will create a personalized account, which includes a unique username and a password to access the Service and allow you to receive messages from the Company. You agree to notify us immediately of any unauthorized use of your password and/or account. The Company will not be responsible for any liabilities, losses, or damages arising out of the unauthorized use of your member name, password and/or account.</p>
+
+    <h2>Use Restrictions</h2>
+    <p>Your permission to use the Site is conditioned upon the following Use Restrictions and Conduct Restrictions: You agree that you will not under any circumstances:</p>
+    <ul>
+      <li>post any information that is abusive, threatening, obscene, defamatory, libelous, or racially, sexually, religiously, or otherwise objectionable and offensive;</li>
+      <li>use the service for any unlawful purpose or for the promotion of illegal activities;</li>
+      <li>attempt to, or harass, abuse or harm another person or group;</li>
+      <li>use another user's account without permission;</li>
+      <li>provide false or inaccurate information when registering an account;</li>
+      <li>interfere or attempt to interfere with the proper functioning of the Service;</li>
+      <li>make any automated use of the system, or take any action that we deem to impose or to potentially impose an unreasonable or disproportionately large load on our servers or network infrastructure;</li>
+      <li>bypass any robot exclusion headers or other measures we take to restrict access to the Service or use any software, technology, or device to scrape, spider, or crawl the Service or harvest or manipulate data; or</li>
+      <li>publish or link to malicious content intended to damage or disrupt another user's browser or computer.</li>
+    </ul>
+
+    <h2>Posting and Conduct Restrictions</h2>
+    <p>When you create your own personalized account, you may be able to provide ("User Content"). You are solely responsible for the User Content that you post, upload, link to or otherwise make available via the Service. You agree that we are only acting as a passive conduit for your online distribution and publication of your User Content. The Company, however, reserves the right to remove any User Content from the Service at its discretion.</p>
+    <p>The following rules pertain to User Content. By transmitting and submitting any User Content while using the Service, you agree as follows:</p>
+    <ul>
+      <li>You are solely responsible for your account and the activity that occurs while signed in to or while using your account;</li>
+      <li>You will not post information that is malicious, false or inaccurate;</li>
+      <li>You will not submit content that is copyrighted or subject to third party proprietary rights, including privacy, publicity, trade secret, etc., unless you are the owner of such rights or have the appropriate permission from their rightful owner to specifically submit such content; and</li>
+      <li>You hereby affirm we have the right to determine whether any of your User Content submissions are appropriate and comply with these Terms of Service, remove any and/or all of your submissions, and terminate your account with or without prior notice.</li>
+    </ul>
+    <p>You understand and agree that any liability, loss or damage that occurs as a result of the use of any User Content that you make available or access through your use of the Service is solely your responsibility. The Company is not responsible for any public display or misuse of your User Content. The Company does not, and cannot, pre-screen or monitor all User Content. However, at our discretion, we, or the technology we employ, may monitor and/or record your interactions with the Service.</p>
+
+    <h2>Online Content Disclaimer</h2>
+    <p>Opinions, advice, statements, offers, or other information or content made available through the Service, but not directly by the Company, are those of their respective authors, and should not necessarily be relied upon. Such authors are solely responsible for such content. The Company does not guarantee the accuracy, completeness, or usefulness of any information on the Service and neither does the Company adopt nor endorse, nor is the Company responsible for the accuracy or reliability of any opinion, advice, or statement made by parties other than the Company. The Company takes no responsibility and assumes no liability for any User Content that you or any other user or third party posts or sends over the Service. Under no circumstances will the Company be responsible for any loss or damage resulting from anyone's reliance on information or other content posted on the Service, or transmitted to users.</p>
+    <p>Though the Company strives to enforce these Terms of Use, you may be exposed to User Content that is inaccurate or objectionable. The Company reserves the right, but has no obligation, to monitor the materials posted in the public areas of the service or to limit or deny a user's access to the Service or take other appropriate action if a user violates these Terms of Use or engages in any activity that violates the rights of any person or entity or which we deem unlawful, offensive, abusive, harmful or malicious. The Company shall have the right to remove any such material that in its sole opinion violates, or is alleged to violate, the law or this agreement or which might be offensive, or that might violate the rights, harm, or threaten the safety of users or others. Unauthorized use may result in criminal and/or civil prosecution under the law. If you become aware of misuse of our Service, please contact us at https://www.mutafuq.com.</p>
+
+    <h2>Links to Other Sites and/or Materials</h2>
+    <p>As part of the Service, the Company may provide you with convenient links to third party website(s) ("Third Party Sites") as well as content or items belonging to or originating from third parties (the"Third Party Applications, Software or Content"). These links are provided as a courtesy to Service subscribers. The Company has no control over Third Party Sites and Third Party Applications, Software or Content or the promotions, materials, information, goods or services available on these Third Party Sites or Third Party Applications, Software or Content. Such Third Party Sites and Third Party Applications, Software or Content are not investigated, monitored or checked for accuracy, appropriateness, or completeness by the Company, and the Company is not responsible for any Third Party Sites accessed through the Site or any Third Party Applications, Software or Content posted on, available through or installed from the Site, including the content, accuracy, offensiveness, opinions, reliability, privacy practices or other policies of or contained in the Third Party Sites or the Third Party Applications, Software or Content. Inclusion of, linking to or permitting the use or installation of any Third Party Site or any Third Party Applications, Software or Content does not imply approval or endorsement thereof by the Company. If you decide to leave the Site and access the Third Party Sites or to use or install any Third Party Applications, Software or Content, you do so at your own risk and you should be aware that our terms and policies no longer govern. You should review the applicable terms and policies, including privacy and data gathering practices, of any site to which you navigate from the Site or relating to any applications you use or install from the site.</p>
+
+    <h2>Copyright Complaints and Copyright Agent</h2>
+    <h3>(a) Termination of Repeat Infringe Accounts.</h3>
+    <p>The Company respects the intellectual property rights of others and requests that the users do the same. The Company has adopted and implemented a policy that provides for the termination in appropriate circumstances of users of the Service who are repeat infringers The Company may terminate access for participants or users who are found repeatedly to provide or post protected third party content without necessary rights and permissions.</p>
+
+    <h3>(b) Take-Down Notices.</h3>
+    <p>If you are a copyright owner or an agent thereof and believe, in good faith, that any materials provided on the Service infringe upon your copyrights, you may submit a notification pursuant by sending the following information in writing to the Company's designated copyright agent at MUTAFUQ EDUCATIONAL SERVICE LTD:</p>
+    <ul>
+      <li>The date of your notification;</li>
+      <li>A Physical or electronic signature of a person authorized to act on behalf of the owner of an exclusive right that is allegedly infringed;</li>
+      <li>A description of the copyrighted work claimed to have been infringed, or, if multiple copyrighted works at a single online site are recovered by a single notification, a representative list of such works at that site;</li>
+      <li>A description of the material that is claimed to be infringing or to be the subject of infringing activity and information sufficient to enable us to locate such work;</li>
+      <li>Information reasonably sufficient to permit the service provider to contact you, such as an address, telephone number, and/or email address;</li>
+      <li>A statement that you have a good faith belief that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law; and</li>
+      <
