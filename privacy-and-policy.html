@@ -1,1 +1,474 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy Policy for Mutafuq Educational Service Ltd." />
+  <title>Privacy &amp; Policy | Mutafuq</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue: #2e85c6;
+      --button: #3d9be9;
+      --text: #111;
+      --muted: #636363;
+      --card: #f7f7fa;
+      --red: #df1224;
+      --container: min(1050px, calc(100% - 48px));
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff url("https://static.wixstatic.com/media/2b9fec1d9ff14b828c221cf1c81ead9d.png") center / cover fixed;
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      width: min(1500px, calc(100% - 48px));
+      margin: 0 auto;
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: 330px;
+      max-width: 42vw;
+      height: auto;
+      display: block;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: var(--button);
+      color: #fff;
+      border-radius: 999px;
+      padding: 12px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(22px, 4vw, 72px);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--button); }
+
+    .legal-page {
+      width: var(--container);
+      margin: 0 auto;
+      padding: clamp(44px, 6vw, 88px) 0 90px;
+    }
+
+    .legal-page h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(64px, 9vw, 112px);
+      line-height: .9;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
+
+    .updated {
+      margin: 12px 0 24px;
+      color: var(--muted);
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.1;
+      font-weight: 300;
+      letter-spacing: .04em;
+    }
+
+    .legal-page h2 {
+      margin: 22px 0 8px;
+      font-size: clamp(34px, 4vw, 50px);
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .legal-page h3 {
+      margin: 18px 0 6px;
+      font-size: clamp(22px, 2.4vw, 28px);
+      line-height: 1.25;
+      font-weight: 600;
+    }
+
+    .legal-page p,
+    .legal-page li,
+    .legal-page td,
+    .legal-page th {
+      font-size: clamp(16px, 1.8vw, 24px);
+      line-height: 1.45;
+      font-weight: 400;
+    }
+
+    .legal-page p { margin: 0 0 10px; }
+
+    .legal-page ul {
+      margin: 10px 0 24px;
+      padding-left: 30px;
+    }
+
+    .legal-page li { margin-bottom: 12px; }
+
+    .cookie-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0 32px;
+      background: rgba(255,255,255,.7);
+    }
+
+    .cookie-table th,
+    .cookie-table td {
+      border: 1px solid rgba(0,0,0,.12);
+      padding: 18px;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .cookie-table th {
+      font-weight: 700;
+      background: rgba(247,247,250,.9);
+    }
+
+    .footer {
+      padding: 48px 0 60px;
+      background: var(--card);
+    }
+
+    .footer-grid {
+      width: min(1215px, calc(100% - 48px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .footer p {
+      margin: 0 0 24px;
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    .map iframe {
+      width: 100%;
+      min-height: 320px;
+      border: 0;
+      display: block;
+    }
+
+    .copyright {
+      width: min(1215px, calc(100% - 48px));
+      margin: 55px auto 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .legal-links {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .chat-button {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 30;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 18px 30px;
+      font-weight: 700;
+      box-shadow: 0 12px 35px rgba(0,0,0,.18);
+    }
+
+    .chat-button span:first-child {
+      display: inline-grid;
+      place-items: center;
+      width: 26px;
+      height: 26px;
+      background: #fff;
+      color: var(--red);
+      border-radius: 50%;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    @media (max-width: 980px) {
+      .nav { min-height: 88px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        inset: 88px 24px auto 24px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 18px 55px rgba(20,20,30,.12);
+        padding: 14px;
+        font-size: 20px;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 14px 18px; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 620px) {
+      :root { --container: min(100% - 28px, 1050px); }
+      .nav { width: calc(100% - 28px); }
+      .logo img { max-width: 68vw; }
+      .legal-page { padding-top: 32px; }
+      .legal-page h1 { font-size: 54px; }
+      .updated { font-size: 28px; }
+      .cookie-table { display: block; overflow-x: auto; }
+      .legal-links { flex-direction: column; gap: 8px; }
+      .chat-button { padding: 14px 18px; right: 14px; bottom: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Mutafuq home">
+        <img src="https://static.wixstatic.com/media/ef1e39_5e42f2d8753e491b9ff7232d00bee719~mv2.png/v1/crop/x_0,y_97,w_1080,h_343/fill/w_411,h_131,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/output-onlinejpgtools.png" alt="Mutafuq Educational Service Ltd logo" />
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#benefits">Services</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a class="active" href="privacy-and-policy.html">Privacy &amp; Policy</a></li>
+        <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="legal-page">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last Updated: September 20, 2022</p>
+
+    <h2>Introduction</h2>
+    <p>This privacy policy (“Policy”) describes how MUTAFUQ EDUCATIONAL SERVICE LTD in Scotland (“Company,” “we,” and “our”) processes, collects, uses and shares personal data when using this website https://www.mutafuq.com (the “Website”). Please read the following information carefully to understand our practices regarding your personal data and how we will process data.</p>
+
+    <h2>Purposes of Processing</h2>
+    <h3>What is personal data?</h3>
+    <p>We collect information about you in a range of forms, including personal data. As used in this Policy, “personal data” is as defined in the General Data Protection Regulation, this includes any information which, either alone or in combination with other information we process about you, identifies you as an individual, including, for example, your name, postal address, email address and telephone number.</p>
+
+    <h3>Why do we need your personal data?</h3>
+    <p>We will only process your personal data in accordance with applicable data protection and privacy laws. We need certain personal data in order to provide you with access to the website. If you registered with us, you will have been asked to tick to agree to provide this information in order to access our services, purchase our products, or view our content. This consent provides us with the legal basis we require under applicable law to process your data. You maintain the right to withdraw such consent at any time. If you do not agree to our use of your personal data in line with this Policy, please do not use our website.</p>
+
+    <h2>Collecting Your Personal Data</h2>
+    <p>We collect information about you in the following ways:</p>
+    <h3>Information You Give Us. This includes:</h3>
+    <ul>
+      <li>the personal data you provide when you register to use our website, including your name, postal address, email address, telephone number, username, password and demographic information (such as your gender);</li>
+      <li>the personal data that may be contained in any video, comment or other submission you upload or post to the website;</li>
+      <li>the personal data you provide in connection with our rewards program and other promotions we run on the website;</li>
+      <li>the personal data you provide when you report a problem with our website or when we provide you with customer support;</li>
+      <li>the personal data you provide when you make a purchase thorough our website; and</li>
+      <li>the personal data you provide when you correspond with us by phone, email or otherwise.</li>
+    </ul>
+
+    <h3>Information from Social Networking Websites.</h3>
+    <p>Our website includes interfaces that allow you to connect with social networking sites (each a “SNS”). If you connect to a SNS through our website, you authorize us to access, use and store the information that you agreed the SNS could provide to us based on your settings on that SNS. We will access, use and store that information in accordance with this Policy. You can revoke our access to the information you provide in this way at any time by amending the appropriate settings from within your account settings on the applicable SNS.</p>
+
+    <h3>Information Automatically Collected.</h3>
+    <p>We automatically log information about you and your computer or mobile device when you access our website. For example, when visiting our website, we log your computer or mobile device operating system name and version, manufacturer and model, browser type, browser language, screen resolution, the website you visited before browsing to our website, pages you viewed, how long you spent on a page, access times and information about your use of and actions on our website. We collect this information about you using cookies.</p>
+
+    <h3>Automated Decision Making and Profiling.</h3>
+    <p>We do not use your personal data for the purposes of automated decision-making. However, we may do so in order to fulfill obligations imposed by law, in which case we will inform you of any such processing and provide you with an opportunity to object.</p>
+
+    <h2>Cookies</h2>
+    <h3>What are cookies?</h3>
+    <p>We may collect information using “cookies.” Cookies are small data files stored on the hard drive of your computer or mobile device by a website. We may use both session cookies (which expire once you close your web browser) and persistent cookies (which stay on your computer or mobile device until you delete them) to provide you with a more personal and interactive experience on our website.</p>
+    <p>We use two broad categories of cookies: (1) first party cookies, served directly by us to your computer or mobile device, which are used only by us to recognize your computer or mobile device when it revisits our website; and (2) third party cookies, which are served by service providers on our website, and can be used by such service providers to recognize your computer or mobile device when it visits other websites.</p>
+
+    <h3>Cookies we use</h3>
+    <p>Our website uses the following types of cookies for the purposes set out below:</p>
+    <table class="cookie-table">
+      <thead>
+        <tr>
+          <th>Type of cookie</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Essential Cookies</td>
+          <td>These cookies are essential to provide you with services available through our website and to enable you to use some of its features. For example, they allow you to log in to secure areas of our website and help the content of the pages you request load quickly. Without these cookies, the services that you have asked for cannot be provided, and we only use these cookies to provide you with those services.</td>
+        </tr>
+        <tr>
+          <td>Functionality Cookies</td>
+          <td>These cookies allow our website to remember choices you make when you use our website, such as remembering your language preferences, remembering your login details and remembering the changes you make to other parts of our website which you can customize. The purpose of these cookies is to provide you with a more personal experience and to avoid you having to re-enter your preferences every time you visit our website.</td>
+        </tr>
+        <tr>
+          <td>Analytics and Performance Cookies</td>
+          <td>
+            <p>These cookies are used to collect information about traffic to our website and how users use our website. The information gathered does not identify any individual visitor. It includes the number of visitors to our website, the websites that referred them to our website, the pages they visited on our website, what time of day they visited our website, whether they have visited our website before, and other similar information. We use this information to help operate our website more efficiently, to gather broad demographic information and to monitor the level of activity on our website.</p>
+            <p>We use Google Analytics for this purpose. Google Analytics uses its own cookies. It is only used to improve how our website works. You can find out more information about Google Analytics cookies here: <a href="https://developers.google.com/analytics/resources/concepts/gaConceptsCookies">https://developers.google.com/analytics/resources/concepts/gaConceptsCookies</a></p>
+            <p>You can find out more about how Google protects your data here: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+            <p>You can prevent the use of Google Analytics relating to your use of our website by downloading and installing the browser plugin available via this link: <a href="http://tools.google.com/dlpage/gaoptout?hl=en-GB">http://tools.google.com/dlpage/gaoptout?hl=en-GB</a></p>
+          </td>
+        </tr>
+        <tr>
+          <td>Targeted and advertising cookies</td>
+          <td>
+            <p>These cookies track your browsing habits to enable us to show advertising which is more likely to be of interest to you. These cookies use information about your browsing history to group you with other users who have similar interests. Based on that information, and with our permission, third party advertisers can place cookies to enable them to show adverts which we think will be relevant to your interests while you are on third party websites.</p>
+            <p>You can disable cookies which remember your browsing habits and target advertising at you by visiting <a href="http://www.youronlinechoices.com/uk/your-ad-choices">http://www.youronlinechoices.com/uk/your-ad-choices</a>. If you choose to remove targeted or advertising cookies, you will still see adverts but they may not be relevant to you. Even if you do choose to remove cookies by the companies listed at the above link, not all companies that serve online behavioral advertising are included in this list, and so you may still receive some cookies and tailored adverts from companies that are not listed.</p>
+          </td>
+        </tr>
+        <tr>
+          <td>Social Media Cookies</td>
+          <td>These cookies are used when you share information using a social media sharing button or “like” button on our website or you link your account or engage with our content on or through a social networking website such as Facebook, Twitter or Google+. The social network will record that you have done this.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Disabling cookies</h3>
+    <p>You can typically remove or reject cookies via your browser settings. In order to do this, follow the instructions provided by your browser (usually located within the “settings,” “help” “tools” or “edit” facility). Many browsers are set to accept cookies until you change your settings.</p>
+    <p>If you do not accept our cookies, you may experience some inconvenience in your use of our website. For example, we may not be able to recognize your computer or mobile device and you may need to log in every time you visit our website.</p>
+
+    <h2>Advertising</h2>
+    <p>We may use other companies to serve third-party advertisements when you visit and use the website. These companies may collect and use click stream information, browser type, time and date, subject of advertisements clicked or scrolled over during your visits to the website and other websites in order to provide advertisements about goods and services likely to be of interest to you. These companies typically use tracking technologies to collect this information. Other companies' use of their tracking technologies is subject to their own privacy policies.</p>
+
+    <h2>Using Your Personal Data</h2>
+    <p>We may use your personal data as follows:</p>
+    <ul>
+      <li>to operate, maintain, and improve our website, products, and services;</li>
+      <li>to manage your account, including to communicate with you regarding your account, if you have an account on our website;</li>
+      <li>to operate and administer our rewards program and other promotions you participate in on our website;</li>
+      <li>to respond to your comments and questions and to provide customer service;</li>
+      <li>to send information including technical notices, updates, security alerts, and support and administrative messages;</li>
+      <li>with your consent, to send you marketing e-mails about upcoming promotions, and other news, including information about products and services offered by us and our affiliates. You may opt-out of receiving such information at any time: such marketing emails tell you how to “opt-out.” Please note, even if you opt out of receiving marketing emails, we may still send you non-marketing emails. Non-marketing emails include emails about your account with us (if you have one) and our business dealings with you;</li>
+      <li>to process payments you make via our website;</li>
+      <li>as we believe necessary or appropriate (a) to comply with applicable laws; (b) to comply with lawful requests and legal process, including to respond to requests from public and government authorities; (c) to enforce our Policy; and (d) to protect our rights, privacy, safety or property, and/or that of you or others;</li>
+      <li>for analysis and study services; and</li>
+      <li>as described in the “Sharing of your Personal Data” section below.</li>
+    </ul>
+
+    <h2>Sharing Your Personal Data</h2>
+    <p>We may share your personal data as follows:</p>
+    <p><strong>Third Parties Designated by You.</strong> We may share your personal data with third parties where you have provided your consent to do so.</p>
+    <p><strong>Our Third Party Service Providers.</strong> We may share your personal data with our third party service providers who provide services such as data analysis, payment processing, information technology and related infrastructure provision, customer service, email delivery, auditing and other similar services.</p>
+
+    <h2>Third Party Sites</h2>
+    <p>Our website may contain links to third party websites and features. This Policy does not cover the privacy practices of such third parties. These third parties have their own privacy policies and we do not accept any responsibility or liability for their websites, features or policies. Please read their privacy policies before you submit any data to them.</p>
+
+    <h2>User Generated Content</h2>
+    <p>You may share personal data with us when you submit user-generated content to our website, including via our rewards program, forums, message boards, and Websites on our website. Please note that any information you post or disclose on our website will become public information, and will be available to other users of our website and to the general public. We urge you to be very careful when deciding to disclose your personal data, or any other information, on our website. Such personal data and other information will not be private or confidential once it is published on our website.</p>
+    <p>If you provide feedback to us, we may use and disclose such feedback on our website, provided we do not associate such feedback with your personal data. If you have provided your consent to do so, we may post your first and last name along with your feedback on our website. We will collect any information contained in such feedback and will treat the personal data in it in accordance with this Policy.</p>
+    <p>It is prohibited to upload, post, transmit, or otherwise make available content through the Application which includes or expresses, without limitation, any abusive behavior, threats, harassment, bullying, malicious attacks, ridicule, graphic materials, gambling advertising, sexually explicit materials, promotion of or urge to use drugs or any other illicit substances, or any materials inconsistent with the provisions of applicable law (“Objectionable Content and Behavior”).</p>
+    <p>We reserve our right to take reasonable measures to expeditiously remove from the Application any Objectionable Content and Behavior that we become aware of. It is our policy, in appropriate circumstances and at our discretion, to disable or terminate the accounts of users of the Application who repeatedly violate the provisions of the previous paragraph. If you have found any Objectionable Content and Behavior or wish to file a complaint about any other information or materials uploaded by other users, please contact us directly. However, it is up to our discretion to decide whether to take any action in connection with your complaint.</p>
+
+    <h2>International Data Transfer</h2>
+    <p>Your information, including personal data that we collect from you, may be transferred to, stored at and processed by us outside the country in which you reside, where data protection and privacy regulations may not offer the same level of protection as in other parts of the world. By accepting this Policy, you agree to this transfer, storing or processing. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Policy.</p>
+
+    <h2>Security</h2>
+    <p>We seek to use reasonable organizational, technical and administrative measures to protect personal data within our organization. Unfortunately, no transmission or storage system can be guaranteed to be completely secure, and transmission of information via the Internet is not completely secure. If you have reason to believe that your interaction with us is no longer secure (for example, if you feel that the security of any account you might have with us has been compromised), please immediately notify us of the problem by contacting us.</p>
+
+    <h2>Retention</h2>
+    <p>We will only retain your personal data as long reasonably required for you to use the website until you close your account/cancel your subscription unless a longer retention period is required or permitted by law (for example for regulatory purposes).</p>
+
+    <h2>Our Policy on Children</h2>
+    <p>Our website is/are not directed to children under 16. If a parent or guardian becomes aware that his or her child has provided us with information without their consent, he or she should contact us. We will delete such information from our files as soon as reasonably practicable.</p>
+
+    <h2>Your Rights</h2>
+    <p><strong>Opt-out.</strong> You may contact us anytime to opt-out of: (i) direct marketing communications; (ii) automated decision-making and/or profiling; (iii) our collection of sensitive personal data; (iv) any new processing of your personal data that we may carry out beyond the original purpose; or (v) the transfer of your personal data outside the EEA. Please note that your use of some of the website may be ineffective upon opt-out.</p>
+    <p><strong>Access.</strong> You may access the information we hold about you at any time via your profile/account or by contacting us directly.</p>
+    <p><strong>Amend.</strong> You can also contact us to update or correct any inaccuracies in your personal data.</p>
+    <p><strong>Move.</strong> Your personal data is portable – i.e. you to have the flexibility to move your data to other service providers as you wish.</p>
+    <p><strong>Erase and forget.</strong> In certain situations, for example when the information we hold about you is no longer relevant or is incorrect, you can request that we erase your data.</p>
+    <p>If you wish to exercise any of these rights, please contact us. In your request, please make clear: (i) what personal data is concerned; and (ii) which of the above rights you would like to enforce. For your protection, we may only implement requests with respect to the personal
+
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <address>
+        <p>Company name: MUTAFUQ EDUCATIONAL SERVICE LTD.</p>
+        <p>Address: 10 Bainfield DR.<br />Edinburgh EH111AR</p>
+        <p>Business Email:<br /><a href="mailto:Info@mutafuq.com">Info@mutafuq.com</a></p>
+      </address>
+      <div class="map" aria-label="Map showing Mutafuq office area">
+        <iframe title="Mutafuq office map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=10%20Bainfield%20Drive%20Edinburgh%20EH11%201AR&output=embed"></iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      MUTAFUQ EDUCATIONAL SERVICE ©
+      <div class="legal-links">
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+        <a href="privacy-and-policy.html">Privacy and Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="chat-button" href="mailto:Info@mutafuq.com?subject=Website enquiry" aria-label="Start a chat by email"><span>≡</span><span>Let's Chat!</span></a>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const links = document.querySelector('#nav-links');
+
+    toggle?.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    links?.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        links.classList.remove('open');
+        toggle?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
 
