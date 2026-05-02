@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Academic and other services from Mutafuq Educational Service Ltd." />
+  <title>Services | Mutafuq</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue: #2e85c6;
+      --button: #3d9be9;
+      --text: #111;
+      --muted: #565656;
+      --card: #f7f7fa;
+      --red: #df1224;
+      --shadow: 0 18px 55px rgba(20, 20, 30, 0.08);
+      --radius-lg: 46px;
+      --container: min(1215px, calc(100% - 48px));
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #fff url("assets/body.png") center / cover fixed;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 1px 0 rgba(0,0,0,0.05);
+    }
+
+    .nav {
+      width: min(1500px, calc(100% - 48px));
+      margin: 0 auto;
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .logo {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: 330px;
+      max-width: 42vw;
+      height: auto;
+      display: block;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: var(--button);
+      color: #fff;
+      border-radius: 999px;
+      padding: 12px 16px;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: clamp(22px, 4vw, 72px);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 25px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active { color: var(--button); }
+
+    .services-page {
+      width: var(--container);
+      margin: 0 auto;
+      padding: clamp(64px, 7vw, 105px) 0 95px;
+    }
+
+    .services-section + .services-section {
+      margin-top: clamp(76px, 9vw, 120px);
+    }
+
+    .services-title {
+      margin: 0 0 46px 110px;
+      font-size: clamp(42px, 5vw, 66px);
+      line-height: 1.1;
+      font-weight: 400;
+      letter-spacing: .01em;
+    }
+
+    .services-card {
+      width: min(1080px, 100%);
+      margin-left: 110px;
+      background: rgba(247,247,250,.94);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: clamp(34px, 4.8vw, 64px) clamp(28px, 5vw, 70px);
+    }
+
+    .services-list {
+      margin: 0;
+      padding-left: 25px;
+    }
+
+    .services-list li {
+      margin: 0 0 36px;
+      padding-left: 8px;
+    }
+
+    .services-list li:last-child { margin-bottom: 0; }
+
+    .service-heading {
+      display: block;
+      font-size: clamp(21px, 2.2vw, 30px);
+      line-height: 1.25;
+      font-weight: 500;
+      margin-bottom: 6px;
+    }
+
+    .service-copy {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(17px, 1.8vw, 25px);
+      line-height: 1.35;
+      font-weight: 300;
+    }
+
+    .service-copy + .service-copy { margin-top: 4px; }
+
+    .footer {
+      padding: 48px 0 60px;
+      background: var(--card);
+    }
+
+    .footer-grid {
+      width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .footer p {
+      margin: 0 0 24px;
+      color: var(--muted);
+      font-size: 17px;
+      font-weight: 300;
+    }
+
+    address { font-style: normal; }
+
+    .map iframe {
+      width: 100%;
+      min-height: 320px;
+      border: 0;
+      display: block;
+    }
+
+    .copyright {
+      width: var(--container);
+      margin: 55px auto 0;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .legal-links {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .chat-button {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 30;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 18px 30px;
+      font-weight: 700;
+      box-shadow: 0 12px 35px rgba(0,0,0,.18);
+    }
+
+    .chat-button span:first-child {
+      display: inline-grid;
+      place-items: center;
+      width: 26px;
+      height: 26px;
+      background: #fff;
+      color: var(--red);
+      border-radius: 50%;
+      font-size: 16px;
+      line-height: 1;
+    }
+
+    @media (max-width: 980px) {
+      .nav { min-height: 88px; }
+      .menu-toggle { display: inline-flex; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        inset: 88px 24px auto 24px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: #fff;
+        border-radius: 24px;
+        box-shadow: 0 18px 55px rgba(20,20,30,.12);
+        padding: 14px;
+        font-size: 20px;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links a { display: block; padding: 14px 18px; }
+      .services-title,
+      .services-card { margin-left: 0; }
+      .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    }
+
+    @media (max-width: 620px) {
+      :root { --container: min(100% - 28px, 1215px); }
+      .nav { width: calc(100% - 28px); }
+      .logo img { max-width: 68vw; }
+      .services-page { padding-top: 42px; }
+      .services-title { margin-bottom: 28px; }
+      .services-card { border-radius: 30px; padding: 32px 24px; }
+      .services-list li { margin-bottom: 28px; }
+      .legal-links { flex-direction: column; gap: 8px; }
+      .chat-button { padding: 14px 18px; right: 14px; bottom: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="logo" href="index.html" aria-label="Mutafuq home">
+        <img src="assets/MSE.PNG" alt="Mutafuq Educational Service Ltd logo" />
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="privacy-and-policy.html">Privacy &amp; Policy</a></li>
+        <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="services-page">
+    <section class="services-section" aria-labelledby="academic-services-title">
+      <h1 class="services-title" id="academic-services-title">Academic services</h1>
+      <div class="services-card">
+        <ul class="services-list">
+          <li>
+            <span class="service-heading">Academic offers for undergraduate and postgraduate (Master, &amp; PhD)</span>
+            <p class="service-copy">Registration to Educational Institutions includes the registration process from document file collection, payment of application fee, notification of information about offer letter, to payment of tuition fee.</p>
+          </li>
+          <li>
+            <span class="service-heading">Aid in UCAS, and SLC applications.</span>
+            <p class="service-copy">Help students during the applicating process.</p>
+          </li>
+          <li>
+            <span class="service-heading">ILETS consultation and planning.</span>
+            <p class="service-copy">Planning and making strategies based on student language ability in order to achieve the best ILETS score within the planed time frame.</p>
+          </li>
+          <li>
+            <span class="service-heading">Visa application services.</span>
+            <p class="service-copy">We manage the entire application process on your behalf, assisting you to navigate through the complicated requirements.</p>
+            <p class="service-copy">To support Tier 4 (General) Visa application guidance.</p>
+          </li>
+          <li>
+            <span class="service-heading">Consultation</span>
+            <p class="service-copy">We will guide you for credibility interview, academic interview, and English test.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="services-section" aria-labelledby="other-services-title">
+      <h2 class="services-title" id="other-services-title">Other services</h2>
+      <div class="services-card">
+        <ul class="services-list">
+          <li>
+            <span class="service-heading">Welcoming</span>
+            <p class="service-copy">We pick up students from the Airport to their accommodations and city guidance if required.</p>
+          </li>
+          <li>
+            <span class="service-heading">Transportation</span>
+            <p class="service-copy">Transporting and help in case of movement.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer-grid">
+      <address>
+        <p>Company name: MUTAFUQ EDUCATIONAL SERVICE LTD.</p>
+        <p>Address: 10 Bainfield DR.<br />Edinburgh EH111AR</p>
+        <p>Business Email:<br /><a href="mailto:Info@mutafuq.co.uk">Info@mutafuq.co.UK</a></p>
+      </address>
+      <div class="map" aria-label="Map showing Mutafuq office area">
+        <iframe title="Mutafuq office map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=10%20Bainfield%20Drive%20Edinburgh%20EH11%201AR&output=embed"></iframe>
+      </div>
+    </div>
+    <div class="copyright">
+      MUTAFUQ EDUCATIONAL SERVICE ©
+      <div class="legal-links">
+        <a href="terms-conditions.html">Terms &amp; Conditions</a>
+        <a href="privacy-and-policy.html">Privacy and Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="chat-button" href="mailto:Info@mutafuq.co.uk?subject=Website enquiry" aria-label="Start a chat by email"><span>≡</span><span>Let's Chat!</span></a>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const links = document.querySelector('#nav-links');
+
+    toggle?.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    links?.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+        links.classList.remove('open');
+        toggle?.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
